@@ -1,0 +1,16 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. teste.
+      *****************************
+      * AREA DE COMENTARIOS - REMARKS
+      * AUTOR LUCAS OLIVEIRA DOS SANTOS (LOS)
+      *OBJETIVO: RECEBER E IMPRIMIR UMA STRING
+      *DATA = 10/09/2025
+      *****************************
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77  WRK-NOME PICTURE X(20) VALUE SPACES.
+       PROCEDURE DIVISION.
+           ACCEPT WRK-NOME FROM CONSOLE.
+           DISPLAY "NOME: " WRK-NOME.
+           STOP RUN.

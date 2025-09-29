@@ -1,0 +1,6 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. TESTEN2-1.
+      * COMENTARIO 
+       PROCEDURE DIVISION.
+           DISPLAY "OLA COBOL".
+           STOP RUN.
