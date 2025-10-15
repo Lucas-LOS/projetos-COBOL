@@ -1,0 +1,33 @@
+       IDENTIFICATION  DIVISION.
+       PROGRAM-ID. TESTEN3-03.
+      * COMENTARIO 
+      *****************************
+      * AREA DE COMENTARIOS - EXIBINDO CPF 
+      * AUTOR LUCAS OLIVEIRA DOS SANTOS (LOS)
+      *OBJETIVO: TESTE 8
+      *DATA = 14/10/2025
+      *****************************
+   
+
+       DATA DIVISION.  
+       WORKING-STORAGE SECTION. 
+       01  CLIENTE-ORIGEM.
+           05 NOME  PIC X(20).
+           05 IDADE PIC 9(02).
+
+       01  CLIENTE-DESTINO.
+           05 NOME  PIC X(20).
+           05 IDADE PIC 9(02).
+
+       procedure division.
+       MOVE "ANA" TO NOME OF CLIENTE-ORIGEM.
+       MOVE 32 TO IDADE OF CLIENTE-ORIGEM.
+       MOVE NOME OF CLIENTE-ORIGEM TO NOME OF CLIENTE-DESTINO.
+       MOVE IDADE OF CLIENTE-ORIGEM TO IDADE OF CLIENTE-DESTINO.
+
+       DISPLAY "DESTINO - NOME:" NOME OF CLIENTE-DESTINO
+       DISPLAY "DESTINO - IDADE:" IDADE OF CLIENTE-DESTINO
+
+       STOP RUN.
+
+      

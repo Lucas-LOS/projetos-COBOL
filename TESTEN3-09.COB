@@ -1,0 +1,28 @@
+       IDENTIFICATION  DIVISION.
+       PROGRAM-ID. TESTEN3-09.
+      * COMENTARIO 
+      *****************************
+      * AREA DE COMENTARIOS - ENDEREÇO CLIENTE
+      * AUTOR LUCAS OLIVEIRA DOS SANTOS (LOS)
+      *OBJETIVO: TESTE 8
+      *DATA = 14/10/2025
+      *****************************
+       DATA DIVISION.  
+       WORKING-STORAGE SECTION. 
+
+       01 CLIENTE.
+        02 ENDERECO.
+         05 RUA PIC X(30).
+         05 NUMERO PIC 9(03).
+         05 CEP PIC 9(08).
+
+       PROCEDURE DIVISION.
+       MOVE "AVENIDA CENTRAL" TO RUA OF ENDERECO OF CLIENTE.
+       MOVE 145 TO NUMERO OF ENDERECO OF CLIENTE.
+       MOVE 12345678 TO CEP OF ENDERECO OF CLIENTE.
+
+       DISPLAY "RUA:" RUA.
+       DISPLAY "NUM:" NUMERO.
+       DISPLAY "CEP:" CEP.
+
+       STOP RUN.
